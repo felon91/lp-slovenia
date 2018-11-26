@@ -1,0 +1,164 @@
+.feature {
+  padding: 0 15px;
+
+  .feature__title {
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'ralewayblack';
+    color: $primary;
+    margin: 50px 0;
+  }
+
+  .feature__list {
+    max-width: 970px;
+    margin: 50px auto;
+    list-style: none;
+    counter-reset: olItemCounter;
+    position: relative;
+    padding-left: 0;
+
+    &::before {
+      content: '';
+      width: 4px;
+      height: 92%;
+      background: url('../../images/freeslovenia/dotted.png') center top repeat-y;
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: calc(50% - 2px);
+    }
+
+  }
+
+  .feature__element {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    min-height: 110px;
+
+    p {
+      flex-basis: 430px;
+      font-size: 18px;
+      font-family: 'Open Sans';
+      font-weight: 300;
+      line-height: 1.556;
+      color: $black;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    b {
+      font-weight: 800;
+      color: $primary;
+    }
+
+    &::after {
+      counter-increment: olItemCounter;
+      content: counter(olItemCounter);
+      border-radius: 50%;
+      background-color: $primary;
+      width: 72px;
+      height: 72px;
+      display: block;
+      text-align: center;
+      color: $white;
+      font-family: 'Montserrat';
+      line-height: 72px;
+      font-size: 30px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+    
+    &:nth-child(odd) {
+      margin-left: 36px;
+
+      p {
+        text-align: right;
+        padding-right: 25px;
+      }
+      
+    }
+
+    &:nth-child(even) {
+      margin-left: auto;
+      margin-right: 36px;
+
+      p {
+        text-align: left;
+        padding-left: 25px;
+        order: 2;
+      }
+
+    }
+    
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .feature {
+
+    .feature__title {
+      font-size: 36px;
+    }
+
+    .feature__list {
+
+      &::before {
+        background: none;
+      }
+
+    }
+
+    .feature__element {
+      width: auto;
+      min-height: auto;
+      margin: 20px 0;
+
+      &:nth-child(odd), &:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      p {
+        flex-basis: auto;
+        flex-grow: 1;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .feature {
+
+    .feature__element {
+      flex-direction: column;
+
+      &:nth-child(odd), &:nth-child(even) {
+
+        p {
+          order: 1;
+          text-align: center;
+          margin-top: 20px;
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+      }
+
+    }
+
+  }
+
+}

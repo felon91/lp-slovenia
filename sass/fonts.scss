@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i|Roboto:300,900&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:300,400,400i,800|Roboto:300,900&subset=cyrillic');
 
 @font-face {
   font-family: 'ralewayblack';
-  src: local('Raleway'), url('../../fonts/ralewayblack-webfont.woff2') format('woff2'),
+  src: url('../../fonts/ralewayblack-webfont.woff2') format('woff2'),
   url('../../fonts/ralewayblack-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'ralewayextrabold';
-  src: local('Raleway'), url('../../fonts/ralewayextrabold-webfont.woff2') format('woff2'),
+  src: url('../../fonts/ralewayextrabold-webfont.woff2') format('woff2'),
   url('../../fonts/ralewayextrabold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
