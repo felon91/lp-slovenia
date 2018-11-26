@@ -92,6 +92,7 @@
       line-height: 16px;
       color: $white;
       cursor: pointer;
+      display: inline-block;
 
       a {
         color: $white;
@@ -108,7 +109,8 @@
         width: 21px;
         height: 21px;
         border: 2px solid $white;
-        top: 15px;
+        top: 50%;
+        transform: translateY(-50%);
         box-sizing: border-box;
         left: -40px;
         border-radius: 3px;
@@ -130,8 +132,8 @@
        position: absolute;
        left: -35px;
        z-index: 1;
-       transform: rotate(-45deg);
-       top: 20px;
+       transform: translateY(calc(-50% - 2px)) rotate(-45deg);
+       top: 50%;
     }
 
     input[type="checkbox"]:focus + label::after {
@@ -139,5 +141,25 @@
     }
 
   }
+
+}
+
+@media (max-width: 768px) {
+
+  //.subscribe {
+  //
+  //  .subscribe__conf {
+  //
+  //    input[type=checkbox]:checked+label {
+  //
+  //      &::before {
+  //        top: 35%;
+  //      }
+  //
+  //    }
+  //
+  //  }
+  //
+  //}
 
 }

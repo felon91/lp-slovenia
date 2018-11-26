@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var params = {
+  const params = {
     rules: {
       name: {
         required: true,

@@ -65,9 +65,20 @@
   
 }
 
+@media (max-width: 980px) {
+
+  .what-give {
+    padding-bottom: 600px;
+    background-position: center calc(100% + 350px);
+  }
+
+}
+
 @media (max-width: 768px) {
 
   .what-give {
+    padding-bottom: 400px;
+    background-position: center calc(100% + 550px);
 
     .what-give__title {
       font-size: 36px;
