@@ -1,12 +1,31 @@
 .header {
-  background: url('../../images/freeslovenia/top-bg.png') no-repeat #35c8ff;
-  
+  background: url('../../images/freeslovenia/bg-one.jpg') center no-repeat #35c8ff;
+
+  .header__wrap {
+    max-width: 970px;
+    padding: 20px 0 200px;
+    background: url('../../images/freeslovenia/men.png') 95% 75px no-repeat;
+  }
+
   h1 {
     color: $white;
     font-size: 60px;
-    line-height: 120%;
-    font-family: 'Raleway';
+    line-height: 122%;
+    font-family: 'ralewayblack';
     font-weight: 900;
+    max-width: 600px;
+    margin: 0 0 20px;
+    padding-top: 160px;
+    background: url('../../images/freeslovenia/ball.png') right top no-repeat;
+  }
+
+  p {
+    color: $white;
+    font-size: 24px;
+    line-height: 35px;
+    max-width: 470px;
+    margin: 20px 0;
+    font-weight: 300;
   }
   
 }
