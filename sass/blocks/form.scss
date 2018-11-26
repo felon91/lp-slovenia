@@ -1,11 +1,12 @@
 .form {
   border-radius: 20px;
-  background-color: rgb(0, 186, 255);
+  background-color: $primary;
   box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.16);
   max-width: 970px;
   margin: 0 auto;
   padding: 65px 0;
   display: flex;
+  justify-content: space-between;
 
   h2 {
     font-size: 45px;
@@ -36,4 +37,71 @@
   margin-top: -235px;
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 980px) {
+
+  .form {
+    margin-left: 15px;
+    margin-right: 15px;
+
+    h2 {
+      padding-left: 0;
+      background: url('../../images/freeslovenia/map.png') left bottom no-repeat,
+      url('../../images/freeslovenia/arrow.png') 175px 89% no-repeat;
+    }
+
+    .form__left {
+      padding-left: 20px;
+    }
+
+    .form__right {
+      padding-right: 20px;
+    }
+
+  }
+
+}
+
+@media (max-width: 880px) {
+
+  .form {
+
+    h2 {
+      background: url('../../images/freeslovenia/map.png') left bottom no-repeat;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .form {
+    flex-wrap: wrap;
+    padding: 35px 0;
+
+    h2 {
+      padding-right: 0;
+      padding-left: 0;
+      font-size: 30px;
+      line-height: 36px;
+      background: none;
+      padding-bottom: 0;
+    }
+
+    .form__left {
+      flex-basis: auto;
+      margin: 0 auto 50px;
+      padding: 0 15px;
+    }
+
+    .form__right {
+      flex-basis: auto;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+  }
+
 }
