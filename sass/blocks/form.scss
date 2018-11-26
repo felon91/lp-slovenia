@@ -1,0 +1,39 @@
+.form {
+  border-radius: 20px;
+  background-color: rgb(0, 186, 255);
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.16);
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 65px 0;
+  display: flex;
+
+  h2 {
+    font-size: 45px;
+    font-family: 'ralewayextrabold';
+    color: $white;
+    line-height: 1.111;
+    padding-left: 30px;
+    padding-right: 70px;
+    margin: 0;
+    padding-bottom: 145px;
+    background: url('../../images/freeslovenia/map.png') 30px bottom no-repeat,
+                url('../../images/freeslovenia/arrow.png') 175px 89% no-repeat;
+  }
+
+  .form__left {
+    padding-left: 70px;
+    flex-basis: 500px;
+  }
+
+  .form__right {
+    padding-right: 70px;
+    flex-basis: 330px;
+  }
+
+}
+
+.form--translate {
+  margin-top: -235px;
+  position: relative;
+  z-index: 1;
+}

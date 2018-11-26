@@ -1,0 +1,129 @@
+.subscribe {
+
+  input:not([type='checkbox']) {
+    border: 2px solid $white;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border-radius: 30px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: $white;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 0 16px 58px;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+    outline: none;
+
+    &::placeholder {
+      opacity: 1;
+      color: $white;
+    }
+
+    &:focus {
+      border-color: #d2ff00;
+    }
+
+  }
+
+  .subscribe__name {
+    background: url('../../images/freeslovenia/person.png') 30px 18px no-repeat;
+  }
+
+  .subscribe__email {
+    background: url('../../images/freeslovenia/mail.png') 30px 18px no-repeat;
+  }
+  
+  button {
+    font-family: 'Roboto';
+    font-weight: 900;
+    color: $black;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    padding: 16px 0;
+    display: block;
+    width: 100%;
+    background: #d2ff00;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #d2ff00;
+
+    &:hover {
+      background: darken(#d2ff00, 5%);
+      border-color: darken(#d2ff00, 5%);
+    }
+
+    &:active {
+      background: darken(#d2ff00, 10%);
+      border-color: darken(#d2ff00, 10%);
+    }
+
+    &:focus {
+      background: darken(#d2ff00, 10%);
+    }
+
+  }
+
+  .subscribe__conf {
+    padding-left: 45px;
+    margin-top: 25px;
+
+    label {
+      position: relative;
+      font-size: 13px;
+      line-height: 16px;
+      color: $white;
+      cursor: pointer;
+
+      a {
+        color: $white;
+        
+        &:hover {
+          text-decoration: none;
+        }
+        
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        border: 2px solid $white;
+        top: 15px;
+        box-sizing: border-box;
+        left: -40px;
+        border-radius: 3px;
+      }
+
+    }
+
+    input[type="checkbox"]:checked + label::after {
+      background-color: $active-checkbox;
+      border-color: $active-checkbox;
+    }
+
+    input[type="checkbox"]:checked + label::before {
+       content: "";
+       width: 10px;
+       height: 5px;
+       border-left: 2px solid $white;
+       border-bottom: 2px solid $white;
+       position: absolute;
+       left: -35px;
+       z-index: 1;
+       transform: rotate(-45deg);
+       top: 20px;
+    }
+
+    input[type="checkbox"]:focus + label::after {
+      border-color: #d2ff00;
+    }
+
+  }
+
+}
