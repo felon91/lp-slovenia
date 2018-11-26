@@ -1,0 +1,106 @@
+.what-give {
+  padding-bottom: 950px;
+  background: url('../../images/freeslovenia/bg-three.jpg') center bottom no-repeat;
+
+  .what-give__title {
+    font-size: 45px;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'ralewayblack';
+    color: $primary;
+    margin: 70px 0 30px;
+  }
+
+  .what-give__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px auto;
+  }
+
+  .what-give__element {
+    text-align: center;
+    flex-basis: 31%;
+    margin: 15px 1%;
+    padding-top: 100px;
+
+    p {
+      font-size: 18px;
+      line-height: 1.556;
+      color: $black;
+      font-weight: 300;
+      max-width: 290px;
+      margin: 20px auto;
+    }
+
+    span {
+      font-size: 14px;
+      color: rgb(122, 134, 148);
+      line-height: 1.714;
+      display: block;
+    }
+
+    &:nth-child(1) {
+      background: url('../../images/freeslovenia/icon1.png') center top no-repeat;
+    }
+
+    &:nth-child(2) {
+      background: url('../../images/freeslovenia/icon2.png') center 15px no-repeat;
+    }
+
+    &:nth-child(3) {
+      background: url('../../images/freeslovenia/icon3.png') center top no-repeat;
+    }
+
+    &:nth-child(4) {
+      background: url('../../images/freeslovenia/icon4.png') center top no-repeat;
+    }
+
+    &:nth-child(5) {
+      background: url('../../images/freeslovenia/icon5.png') center 10px no-repeat;
+    }
+
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .what-give {
+
+    .what-give__title {
+      font-size: 36px;
+    }
+
+    .what-give__element {
+      flex-basis: 46%;
+      margin: 15px 2%;
+
+      p {
+        font-size: 16px;
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .what-give {
+
+    .what-give__element {
+      flex-basis: auto;
+      margin: 15px 0;
+
+      p {
+        max-width: initial;
+      }
+
+    }
+
+  }
+
+}

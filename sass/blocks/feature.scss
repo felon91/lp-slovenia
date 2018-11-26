@@ -1,5 +1,6 @@
 .feature {
-  padding: 0 15px;
+  padding: 0 15px 950px 15px;
+  background: url('../../images/freeslovenia/bg-two.jpg') center bottom no-repeat;
 
   .feature__title {
     font-size: 45px;
@@ -101,9 +102,20 @@
 
 }
 
+@media (max-width: 980px) {
+
+  .feature {
+    padding-bottom: 600px;
+    background-position: center calc(100% + 350px);
+  }
+
+}
+
 @media (max-width: 768px) {
 
   .feature {
+    padding-bottom: 400px;
+    background-position: center calc(100% + 550px);
 
     .feature__title {
       font-size: 36px;

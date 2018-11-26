@@ -8,6 +8,7 @@ module.exports = function () {
     return $.gulp.src(jsfiles)
         .pipe($.gp.plumber())
         .pipe($.gp.sourcemaps.init())
+        .pipe($.babel({presets: ["@babel/preset-env"]}))
         .pipe($.gp.concat('all.js'))
         .pipe($.uglify())
         .pipe($.rename('all.min.js'))

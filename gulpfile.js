@@ -10,6 +10,7 @@ global.$ = {
   del: require('del'),
   run: require('run-sequence'),
   uglify: require('gulp-uglify'),
+  babel: require('gulp-babel'),
   path: {
     config: require('./gulp/config.js'),
     jquery: './js/jquery.js',
