@@ -1,5 +1,6 @@
 .header {
-  background: url('../../images/freeslovenia/bg-one.jpg') center no-repeat $primary;
+  background: url('../../images/freeslovenia/bg-one.jpg') center no-repeat;
+  background-color: $primary;
 
   .header__wrap {
     max-width: 970px;
