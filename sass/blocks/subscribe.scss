@@ -85,6 +85,7 @@
   .subscribe__conf {
     padding-left: 45px;
     margin-top: 25px;
+    position: relative;
 
     label {
       position: relative;
@@ -118,12 +119,12 @@
 
     }
 
-    input[type="checkbox"]:checked + label::after {
+    input[type="checkbox"]:checked ~ label::after {
       background-color: $active-checkbox;
       border-color: $active-checkbox;
     }
 
-    input[type="checkbox"]:checked + label::before {
+    input[type="checkbox"]:checked ~ label::before {
        content: "";
        width: 10px;
        height: 5px;
@@ -136,8 +137,18 @@
        top: 50%;
     }
 
-    input[type="checkbox"]:focus + label::after {
+    input[type="checkbox"]:focus ~ label::after {
       border-color: #d2ff00;
+    }
+
+    #checkbox-error {
+      position: absolute;
+      bottom: -35px;
+      
+      &::after {
+        display: none;
+      }
+      
     }
 
   }

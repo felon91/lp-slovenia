@@ -8,6 +8,9 @@ $(document).ready(function() {
       email: {
         required: true,
         email: true
+      },
+      checkbox: {
+        required: true
       }
     },
     messages: {
@@ -15,7 +18,8 @@ $(document).ready(function() {
         required: "Введите, пожалуйста, Ваше имя",
         minlength: "Минимальное количество символов 2"
       },
-      email: "Пожалуйста, введите корректный email"
+      email: "Пожалуйста, введите корректный email",
+      checkbox: "Пожалуйста, дайте согласие на обработку данных"
     }
   };
 
